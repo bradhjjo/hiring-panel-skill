@@ -10,14 +10,16 @@ Made by **Alex Chen** ([@nocodealex](https://instagram.com/nocodealex)), an AI c
 1. **The automated screen** decides if a human even sees your resume: can it be read, are titles and dates clear,
    which of the job's key terms are missing. PASS or REJECT, with the lines it's about.
 2. **The hiring manager** decides if you get the interview, and says what decided it in the first ten seconds.
-3. **Five readers, alone.** Nobody sees anybody else's notes: the hiring manager (can you do the job on day one?),
+3. **Five readers, alone.** Nobody sees anybody else's notes: the team lead (can you do the job on day one?),
    another applicant (where is your resume weaker than mine?), the CEO (what did you change, and by how much?), the
    recruiter (30 seconds, top third only) and a teammate (how do you work with others?). HIRE, MAYBE or PASS each.
 
 Then it merges everything into one list of mistakes, worst first, **rebuilds your resume with every one fixed**
-(same facts, nothing invented), and runs the automated screen again to show the before and after verdict.
+(same facts, nothing invented, in your original format), and runs the automated screen and the hiring manager again
+to show the before and after verdict.
 
-Everything goes in `.hiring-panel/` where you run it: `PANEL.md` and `RESUME-IMPROVED.md`.
+Everything goes in `.hiring-panel/<date>-<role>/` where you run it: `PANEL.md` and `RESUME-IMPROVED` in the format
+you gave it (.docx stays .docx, LaTeX stays LaTeX; a PDF or pasted text comes back as Markdown).
 
 ## Install
 
@@ -43,7 +45,7 @@ Or copy `skills/hiring-panel` into `~/.claude/skills/`. Open a new Claude Code s
 /hiring-panel ~/Documents/resume.pdf  Senior product designer at a fintech startup
 ```
 
-Paste the job posting after your resume for the sharpest read. One run is eight sub-agent calls and counts toward
+Paste the job posting after your resume for the sharpest read. One run is nine sub-agent calls and counts toward
 your Claude plan's usage.
 
 ## Good to know
@@ -63,7 +65,7 @@ Go ahead. Credit it like this, in your caption or description:
 /hiring-panel skill by Alex Chen (@nocodealex): github.com/alexyc9381/hiring-panel-skill
 ```
 
-Tag [@nocodealex](https://instagram.com/nocodealex) so I can see it. Every file the skill writes already ends with
-the same credit, so leave it in the shot.
+Tag [@nocodealex](https://instagram.com/nocodealex) so I can see it. `PANEL.md` (and a Markdown resume) already ends
+with the same credit, so leave it in the shot. A .docx or LaTeX resume stays clean, since you will send it.
 
 Writing about it or citing it in a paper? Use **Cite this repository** in the sidebar on GitHub.
