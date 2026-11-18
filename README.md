@@ -26,14 +26,14 @@ you gave it (.docx stays .docx, LaTeX stays LaTeX; a PDF or pasted text comes ba
 Paste this into Claude Code:
 
 ```
-https://github.com/alexyc9381/hiring-panel-skill
+https://github.com/bradhjjo/hiring-panel-skill
 Install this skill, then confirm /hiring-panel works.
 ```
 
 Or as a plugin:
 
 ```
-/plugin marketplace add alexyc9381/hiring-panel-skill
+/plugin marketplace add bradhjjo/hiring-panel-skill
 /plugin install hiring-panel-skill@hiring-panel-skill
 ```
 
